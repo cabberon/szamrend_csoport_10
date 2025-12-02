@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Task</h2>
+<div id="task"></div>
+
+<h2>Submit your solution</h2>
+<form action="https://YOUR_BACKEND_URL/upload" method="POST" enctype="multipart/form-data">
+  <input type="file" name="file" required>
+  <button type="submit">Upload</button>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  fetch("task.md")
+    .then(r => r.text())
+    .then(t => document.getElementById("task").innerHTML = marked.parse(t));
+</script>
+</body>
+</html>
