@@ -1,23 +1,62 @@
-SZÁMÍTÓGÉPES RENDSZEREK PowerShell (minta)ZÁRTHELYI
-MUNKAIDŐ: 70 perc.
+# JÁTÉKSZABÁLYOK
 
-1. Készítsen scriptet, amelyik meghatározza egy intervallumba tartozó prímeket! A
-prím meghatározását írja meg függvényként!
+A ZH-ra **60 perc** áll rendelkezésre.
 
-2. Készítsen scriptet, amelyik egy fájl minden harmadik sorát külön-külön fájlokba másolja! Ellenőrizze, hogy létezik-e a fájl!
---elso.txt → 1., 4., 7., … sorok
+**Openbook**, kivéve:
+- AI használata  
+- egymással való kommunikáció  
 
---masodik.txt → 2., 5., 8., … sorok
+Minden feladat **5 pontot ér**, a ZH **20 pontos**, a minimumhoz **50%** szükséges.
 
---harmadik.txt → 3., 6., 9., … sorok
+A **nem forduló kód is érhet részpontot**, ezért ha nem teljes a megoldásotok, azt is adjátok be.
 
-3. Készítsünk scriptet, amelyik egy fájlban lévő neptun azonosítókban megkeresi azokat,
-amelyek egy adott karakterláncot tartalmaznak és ezeket külön másolja
+A végén **1 darab ZIP fájlt kell feltöltenetek**, más fájlformátum nem elfogadható, a megoldást egyszer lehet feltölteni.
 
-4. Készítsünk scriptet, amelyik a paraméterként érkező két számot elosztja. Ellenőrizzük, hogy kaptunk-e két egész paramétert. Nullával való osztást védjük ki try catch használatával.
+Minden feladatnál **kötelező** ellenőrizni, hogy a felhasznált fájl vagy paraméter **létezik-e**.
 
-5. Készítsünk scriptet, amelyik egy fájlban megadott azonosítókhoz létrehoz olyan nevű
-könyvtárakat, ha azok még nem léteztek! A könyvtárak mindegyikébe másoljon be,
-egy a kezdő felhasználónak szóló read.me fájlt, amelyet szintén paraméterként kap
-meg! Ellenőrizze, hogy léteznek-e a fájlok és azt, hogy az azonosítók lehetnek-e
-Neptun kódok!
+---
+
+# Feladatok
+
+## 1. feladat — `1.ps1`
+Készíts scriptet **1.ps1** néven, amely:
+
+- a paraméterben megadott számokból **kiszámolja az összegüket**,  
+- **az átlagukat**,  
+- és a számok **négyzetösszegét**.
+
+A paraméterben a számokat **tömbként** kell bekérni.
+
+---
+
+## 2. feladat — `2.ps1`
+Készíts scriptet **2.ps1** néven, amely:
+
+- egy megadott fájlból  
+- **minden második sort**  
+- egy **új fájlba** másol!
+
+---
+
+## 3. feladat — `3.ps1`
+Készíts scriptet **3.ps1** néven, amely:
+
+- a paraméterként kapott számnak kiszámolja az **1 / szám** értékét  
+- Ellenőrizd, hogy a kapott paraméter **egész szám-e**  
+- A reciprokszámítást **try–catch** blokkban végezd!
+
+---
+
+## 4. feladat — `4.ps1`
+Készíts scriptet **4.ps1** néven, amely:
+
+- a paraméterként kapott, azonosítókat tartalmazó **szövegfájl** alapján mappákat hoz létre  
+- minden mappába hozzon létre egy **start.txt** fájlt  
+- ebbe írja bele a paraméterként kapott szöveget **fordítva** (karakterenként visszafelé)
+
+Ellenőrizd:
+- hogy a bemeneti fájl **létezik-e**
+- az azonosítók **legalább 4 karakter hosszúak legyenek**
+- ha egy mappa már létezik, akkor csak írd ki, hogy **„már létezik a mappa”**
+
+
